@@ -1,0 +1,7 @@
+﻿  PongWin32AI.cpp
+C:\tf_c_api\include\tensorflow\c\c_api.h(952,38): warning C4190: 'TF_NewWhile' has C-linkage specified, but returns 'TF_WhileParams' which is incompatible with C
+  (compiling source file 'PongWin32AI.cpp')
+      C:\tf_c_api\include\tensorflow\c\c_api.h(910,16):
+      see declaration of 'TF_WhileParams'
+  
+  PongWin32AI.vcxproj -> C:\Users\rahul\Programming\pong-ai\PongWin32AI\x64\Debug\PongWin32AI.exe

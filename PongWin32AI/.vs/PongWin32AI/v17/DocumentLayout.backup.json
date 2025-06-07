@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\rahul\\Programming\\pong-ai\\PongWin32AI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EEA4DCB8-271F-4766-8BA8-BC58D760C77B}|PongWin32AI.vcxproj|C:\\Users\\rahul\\Programming\\pong-ai\\PongWin32AI\\PongWin32AI.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EEA4DCB8-271F-4766-8BA8-BC58D760C77B}|PongWin32AI.vcxproj|solutionrelative:PongWin32AI.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PongWin32AI.cpp",
+              "DocumentMoniker": "C:\\Users\\rahul\\Programming\\pong-ai\\PongWin32AI\\PongWin32AI.cpp",
+              "RelativeDocumentMoniker": "PongWin32AI.cpp",
+              "ToolTip": "C:\\Users\\rahul\\Programming\\pong-ai\\PongWin32AI\\PongWin32AI.cpp",
+              "RelativeToolTip": "PongWin32AI.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-07T01:41:27.611Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
