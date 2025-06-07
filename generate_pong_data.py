@@ -44,19 +44,31 @@ y = np.array(labels, dtype=np.float32)
 model = tf.keras.Sequential([
     # Using 32 is a design choice and this number can be changed. Since the data array is five dimensional.
     # Relu is used because of the binary options of no (negative) or yes (how much, positive).
+    # Using tanh activation function because it allows us to get a gradient of numbers around 0, something that
+    # is important for quick changes, like in this program.
     # "Entry layer", "Processing layer", "Output layer"
     tf.keras.layers.Dense(32, activation='relu', input_shape=(5,)),
     tf.keras.layers.Dense(32, activation='relu'),
     tf.keras.layers.Dense(1, activation='tanh')
 ])
 
+# Instructions on how to train model, optimizer adjusts the weights for the 'model'
+# Adaptive Moment Estimation adapts its learning rate the closer it gets to the solution
+# Loss function is Mean Square Error, and it measures how wrong the model is to the 'right' answers
+# Metric is a function to monitor and judge model during training, and Mean Absolute Error gives humans the average
+# difference between predictions and actual values.
 model.compile(
     optimizer='adam',
     loss='mse',
     metrics=['mae']
 )
 
-# 7) Train for 10 epochs, batch size 256, 10% validation split
+# Starts the training process and finds the fit between X and y, 
+# where X is the data (of length 5 array) and y is the labels (go up, go down, stay the same). 
+# Epochs is the amount of times the model looks at the dataset (overfitting vs. underfitting).
+# Batch size specifies how many values at a time the model looks at when learning (overfitting vs. underfitting).
+# Validation split lays out a percentage of the training data to test on so we prevent overfitting.
+# Verbose value of 2 prints out one line per epoch (helpful for debugging per step).
 model.fit(
     X, y,
     epochs=10,
@@ -65,10 +77,14 @@ model.fit(
     verbose=2
 )
 
-# 8) Save the model to "saved_pong_ai"
+# Save model
 SAVE_DIR = "saved_pong_ai"
 if not os.path.exists(SAVE_DIR):
     os.makedirs(SAVE_DIR)
-model.save(SAVE_DIR)
 
+# Get full path
+filepath = os.path.join(SAVE_DIR, "pong_model.keras")
+model.save(filepath)
+
+# Notify when completed
 print(f"Model saved into: ./{SAVE_DIR}")
