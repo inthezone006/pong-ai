@@ -83,8 +83,7 @@ if not os.path.exists(SAVE_DIR):
     os.makedirs(SAVE_DIR)
 
 # Get full path
-filepath = os.path.join(SAVE_DIR, "pong_model.keras")
-model.save(filepath)
+model.export(SAVE_DIR)
 
 # Notify when completed
-print(f"Model saved into: ./{SAVE_DIR}")
+print(f"SavedModel saved into: ./{SAVE_DIR}")
