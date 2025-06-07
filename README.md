@@ -1,5 +1,4 @@
 # 🏓 Pong AI
-
 A classic Pong game with a TensorFlow-powered AI opponent, built in C++ for Win32 using Visual Studio 2022. No Python required at runtime—just unzip and play!
 
 ## 🎯 Project Goal
@@ -20,17 +19,13 @@ Create a lightweight Windows executable demonstrating how to embed a TensorFlow 
 
 ### 🧰 Prerequisites
 
-- 💻 **Windows 10/11 x64**
+- 💻 Windows 10/11 x64
+- 🛠️ Visual Studio 2022 (Desktop C++ workload)
+- 🐍 Python 3.8+
+- 🗄️ TensorFlow C API
+- 📦 Visual C++ Redistributable 2022
 
-- 🛠️ **Visual Studio 2022 (Desktop C++ workload)**
-
-- 🐍 **Python 3.8+**
-
-- 🗄️ **TensorFlow C API**
-
-- 📦 **Visual C++ Redistributable 2022**
-
-### 🛠️ Build & Train
+### 🛠️ Installation
 
 1. 📥 Clone the repo:
     ```bash
